@@ -6,12 +6,20 @@
     <script type="text/javascript" src="js/underscore-min.js"></script>
     <script type="text/javascript" src="js/backbone-min.js"></script>
     <script type="text/javascript" src="js/mustache.js"></script>
+    <script type="text/javascript" src="js/pomotodo.js"></script>
   </head>
   <body>
     <ul id="complete">
     </ul>
-    <input type="text" class="new_item" placeholder="LitHum Essay"/>
+    <form id="new_item_form">
+      <input type="text" id="add_item" placeholder="LitHum Essay"/>
+    </form>
     <ul id="incomplete">
     </ul>
+    <div style="display:none" id="templates">
+      <div id="inc-template">
+        <li class="incomplete">{{text}}</li>
+      </div>
+    </div>
   </body>
 </html>
