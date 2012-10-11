@@ -2,6 +2,9 @@
 <html>
   <head>
     <title>PomoToDo</title>
+    <link rel="stylesheet" href="css/grid.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/pomotodo.css" />
     <script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
     <script type="text/javascript" src="js/underscore-min.js"></script>
     <script type="text/javascript" src="js/backbone-min.js"></script>
@@ -9,17 +12,32 @@
     <script type="text/javascript" src="js/pomotodo.js"></script>
   </head>
   <body>
-    <ul id="complete">
-    </ul>
-    <form id="new_item_form">
-      <input type="text" id="add_item" placeholder="LitHum Essay"/>
-    </form>
-    <ul id="incomplete">
-    </ul>
+    <div class="container_10">
+      <div id="vcenter">
+        <ul id="complete">
+        </ul>
+        <div id="middle">
+          <form id="new_item_form">
+            <input type="text" id="add_item" placeholder="Type some tasks here"/>
+          </form>
+        </div>
+
+        <ul id="incomplete">
+        </ul>
+
+      </div>
+    </div>
     <div style="display:none" id="templates">
       <div id="inc-template">
-        <li class="incomplete">{{text}}</li>
-        <a href="#" class="complete">c</a>
+        <li class="incomplete" id="{{cid}}">
+        {{text}}
+        <a href="#" class="mark_complete" data-cid="{{cid}}"><i class="icon-ok"></i></a>
+        </li>
+      </div>
+      <div id="com-template">
+        <li class="complete">
+        {{text}}
+        </li>
       </div>
     </div>
   </body>

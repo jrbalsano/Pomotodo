@@ -1,0 +1,58 @@
+body {
+  background-image: url('../img/retina_wood.png');
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 15px;
+}
+form {
+  display: block;
+  width: 634px;
+  height: 36px;
+}
+input {
+  width: 634px;
+  border: 1px solid;
+  height: 20px;
+  font-size: 15px;
+  padding: 7px;
+  border-radius: 3px;
+}
+ul {
+  padding: 0px;
+  width: 100%;
+}
+li {
+  list-style: none;
+  display: block;
+  border: 1px solid;
+  margin: 0;
+  height: 20px;
+  padding: 7px;
+  margin-bottom: -1px;
+  overflow: hidden;
+}
+li:hover {
+  width: 650px;
+  font-weight: 800;
+  margin-left: -8px;
+}
+
+li.incomplete {
+  background: #FFF;
+}
+li.complete {
+  background: #EEE;
+  color: #999;
+}
+a {
+  text-decoration: none;
+  color: #0F0;
+}
+a.mark_complete {
+  display: block;
+  height: 25px;
+  width: 25px;
+  float: right;
+}
+div#vcenter {
+  position: relative;
+}
