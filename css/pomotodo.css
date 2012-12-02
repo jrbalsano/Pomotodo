@@ -2,6 +2,7 @@ body {
   background-image: url('../img/retina_wood.png');
   font-family: Helvetica, Arial, sans-serif;
   font-size: 15px;
+  margin:0px;
 }
 form {
   display: block;
@@ -55,4 +56,20 @@ a.mark_complete {
 }
 div#vcenter {
   position: relative;
+}
+#current_task {
+  background: white;
+  border: 1px solid;
+  border-radius: 7px;
+  padding: 8px;
+}
+#current_task h1 {
+  font-size: 75px;
+  text-align: center;
+  margin: 5px 0 5px 0;
+  font-weight: 200;
+}
+#current_task p {
+  color: #444;
+}
 }

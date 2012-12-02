@@ -101,6 +101,7 @@ $(document).ready(function () {
   PTD.incomplete_template = $("#inc-template").html();
   PTD.complete_template = $("#com-template").html();
   PTD.centerAlignMiddle();
+  $(window).resize( PTD.centerAlignMiddle );
 
   var myTasks = new PTD.Tasks();
   var myAddTaskView = new PTD.AddTaskView({
